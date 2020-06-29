@@ -1,0 +1,53 @@
+# ===================================================================================================
+# AUTOMATION TEST ENVIRONMENT CONFIGURATIONS
+# ===================================================================================================
+# FILE: config.yml
+#
+# SEE ALSO:
+#  * http://selenium-python.readthedocs.org/index.html
+#  * https://seleniumhq.github.io/selenium/docs/api/py/
+# ===================================================================================================
+
+test:
+
+  # Base application url
+  application_url: "http://lol.gamersclub.com.br"
+
+  # Login credentials 
+  user: "user"
+  password: "pass"
+
+  # Browser name where tests will be executed. Supported browser are 'chrome' and 'chromeheadless'.
+  browser: chrome
+  resolution: 1366 x 768
+
+  # By default Selenium will wait for 30 seconds until it finds the element. Else it will
+  # throws NoSuchElementException or TimeoutException
+  implicit_timeout: 5
+  
+  # Number of days to keep the log files, 0 means log files will be deleted immediately
+  number_of_days_to_keep_log_files: 1
+
+ci:
+
+  # Base application url
+  application_url: "http://lol.gamersclub.com.br"
+
+  # Login credentials
+  user: "user"
+  password: "pass"
+
+  # Browser name where tests will be executed. Supported browser are 'chrome' and 'chromeheadless'.
+  browser: chromeheadless
+  resolution: 1366 x 768
+
+  # By default Selenium will wait for 30 seconds until it finds the element. Else it will
+  # throws NoSuchElementException or TimeoutException
+  implicit_timeout: 3
+
+  # Number of days to keep the log files, 0 means log files will be deleted immediately
+  number_of_days_to_keep_log_files: 1
+
+local: "http://localhost:4200"
+
+server: "http://lol.gamersclub.com.br"

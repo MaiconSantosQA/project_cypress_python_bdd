@@ -1,0 +1,12 @@
+.pyc
+*.pyc
+.vscode
+.idea
+*.png
+*.log
+reports/*.xml
+*.output
+allure-results/*.json
+allure-results/*.csv
+screenshots/.png
+.scannerwork/
